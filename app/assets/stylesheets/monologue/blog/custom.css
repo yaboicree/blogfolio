@@ -1,0 +1,35 @@
+/*
+ * sloppy code - couldnt figue out how to link application.css file...
+ * had same issue with header html.erb file
+ * and rails links in _header.html.erb didnt work
+ */
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 6px 8%;
+}
+
+.nav {
+	text-decoration: none;
+}
+
+.nav:hover {
+	text-decoration: none;
+}
+
+@media only screen and (min-width : 480px) {
+	
+	nav li {
+	margin: 6px 14%;
+	}
+
+}
+
+@media only screen and (min-width : 760px) {
+	
+	nav li {
+	margin: 6px 8%;
+	}
+
+}

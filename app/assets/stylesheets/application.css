@@ -1,0 +1,36 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+/* custom navbar */
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 6px 8%;
+}
+
+.nav {
+	text-decoration: none;
+}
+
+.nav:hover {
+	text-decoration: none;
+}
+
+@media only screen and (min-width : 480px) {
+	
+	nav li {
+	margin: 6px 14%;
+	}
+
+}
+
+@media only screen and (min-width : 760px) {
+	
+	nav li {
+	margin: 6px 8%;
+	}
+
+}

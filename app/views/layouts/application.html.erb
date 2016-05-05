@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+	<head>
+				<title><%= full_title(yield(:title)) %></title>
+		<%= stylesheet_link_tag    "monologue/blog/application" %>
+		<%= javascript_include_tag "monologue/blog/application" %>
+
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+	  <div class="container">
+	    
+	   	<%= render 'layouts/header' %>
+
+			<%= yield %>
+
+			<%= render 'layouts/footer' %>
+		</div>
+	</body>
+</html>
