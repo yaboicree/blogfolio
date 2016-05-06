@@ -4,6 +4,10 @@
  * and rails links in _header.html.erb didnt work
  */
 
+nav {
+	margin: 40px 0px;
+}
+
 nav li {
 	list-style-type: none;
 	display: inline-block;
@@ -13,6 +17,8 @@ nav li {
 .nav {
 	text-decoration: none;
 }
+
+
 
 .nav:hover {
 	text-decoration: none;
