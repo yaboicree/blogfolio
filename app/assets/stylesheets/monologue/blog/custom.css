@@ -5,47 +5,54 @@
  */
 
 h1 {
-  margin: 40px 0px 40px 0px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none !important;
+	font-size: 4em;
 }
 
 h2, h3 {
-	margin: 20px 0px;
-}
-
-nav {
-	margin: 0px 0px 60px 0px;
-	padding: 20px 0px;
-	border-bottom: 1px solid black;
+		margin: 20px 0px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 2em;
 }
 
 nav li {
 	list-style-type: none;
-	display: inline-block;
-	margin: 6px 8%;
+	display: block;
+	margin: 6px 25%%;
+}
+
+.small {
+	width: 380px;
+	height: auto;
+	clear: both;
+	display: block;
+	margin: 20px 40px;
+	box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
 .nav {
 	text-decoration: none;
 }
 
-
-
 .nav:hover {
 	text-decoration: none;
-}
-
-@media only screen and (min-width : 480px) {
-	
-	nav li {
-	margin: 6px 14%;
-	}
-
 }
 
 @media only screen and (min-width : 760px) {
 	
 	nav li {
-	margin: 6px 8%;
+		display: inline-block;
+		margin: 6px 12%;
+	}
+	
+	h1 {
+	  margin: 40px 0px 40px 0px;
 	}
 
+	nav {
+		margin: 0px 0px 60px 0px;
+		padding: 20px 0px;
+		border-bottom: 1px solid black;
+	}
 }
