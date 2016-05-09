@@ -10,17 +10,17 @@ header {
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
-  margin: 40px 0px 0px 0px;
 }
-
-
 
 h2, h3 {
-	margin: 20px 0px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
+		margin: 20px 0px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: normal;
 }
 
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+}
 nav li {
 	list-style-type: none;
 	display: block;
