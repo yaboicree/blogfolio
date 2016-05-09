@@ -18,7 +18,7 @@ h1 {
 h2, h3 {
 	margin: 20px 0px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
+	font-weight: normal;
 }
 
 nav li {
@@ -44,17 +44,15 @@ nav li {
 	text-decoration: none;
 }
 
+figure {
+	margin: 10px 0px !important;
+}
+
 @media only screen and (min-width : 760px) {
 	
 	nav li {
 		display: inline-block;
 		margin: 6px 12%;
-	}
-	
-	h1 {
-	}
-
-	h1 a {
 	}
 
 	nav {

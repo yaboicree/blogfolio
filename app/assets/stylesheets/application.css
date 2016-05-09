@@ -1,12 +1,13 @@
 /*
- *= require_tree .
- *= require_self
+ *= require_tree
  *= require monologue/blog/skeleton/base
  *= require monologue/blog/skeleton/skeleton
  *= require monologue/blog/skeleton/layout
  *= require monologue/foundation_icons/social_foundicons
  *= require monologue/blog/monologue
  *= require monologue/blog/fonts
+  .
+ *= require_self
  *= require monologue/blog/custom
  */
 header {
@@ -20,8 +21,12 @@ h1 {
 h2, h3 {
 		margin: 20px 0px;
 		font-family: 'Open Sans', sans-serif;
+		font-weight: normal;
 }
 
+h1 a, h2 a, h3 a {
+	text-decoration: none;
+}
 nav li {
 	list-style-type: none;
 	display: block;
@@ -43,6 +48,16 @@ nav li {
 
 .nav:hover {
 	text-decoration: none;
+}
+
+
+/* figure on about page */
+figure {
+	margin: 10px 0px;
+}
+
+p, p.twelve.columns {
+	margin: 10px 0px;
 }
 
 @media only screen and (min-width : 760px) {
