@@ -1,32 +1,39 @@
 /*
  *= require_tree .
  *= require_self
+ *= require monologue/blog/skeleton/base
+ *= require monologue/blog/skeleton/skeleton
+ *= require monologue/blog/skeleton/layout
+ *= require monologue/foundation_icons/social_foundicons
+ *= require monologue/blog/monologue
+ *= require monologue/blog/fonts
+ *= require monologue/blog/custom
  */
+header {
+	text-align: center;
+}
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	text-decoration: none;
-	font-size: 4em;
 }
 
 h2, h3 {
 		margin: 20px 0px;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 2em;
 }
 
 nav li {
 	list-style-type: none;
 	display: block;
-	margin: 6px 25%%;
+	margin: 6px 25%;
 }
 
 .small {
-	width: 380px;
+	width: 300px;
 	height: auto;
 	clear: both;
 	display: block;
-	margin: 20px 40px;
+	margin: 20px 0px;
 	box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
@@ -49,9 +56,18 @@ nav li {
 	  margin: 40px 0px 40px 0px;
 	}
 
+	h2, h3{
+		margin: 20px 0px;
+	}
+
 	nav {
 		margin: 0px 0px 60px 0px;
 		padding: 20px 0px;
 		border-bottom: 1px solid black;
 	}
+	.small {
+		margin: 20px 40px;
+		width: 380px;
+	}
+
 }

@@ -4,30 +4,35 @@
  * and rails links in _header.html.erb didnt work
  */
 
-h1 {
-	font-family: 'Montserrat', sans-serif;
-	text-decoration: none !important;
-	font-size: 4em;
+header {
+	text-align: center;
 }
 
+h1 {
+	font-family: 'Montserrat', sans-serif;
+  margin: 40px 0px 0px 0px;
+}
+
+
+
 h2, h3 {
-		margin: 20px 0px;
-		font-family: 'Open Sans', sans-serif;
-		font-size: 2em;
+	margin: 20px 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
 }
 
 nav li {
 	list-style-type: none;
 	display: block;
-	margin: 6px 25%%;
+	margin: 6px 25%;
 }
 
 .small {
-	width: 380px;
+	width: 300px;
 	height: auto;
 	clear: both;
 	display: block;
-	margin: 20px 40px;
+	margin: 20px 0px;
 	box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
@@ -47,12 +52,19 @@ nav li {
 	}
 	
 	h1 {
-	  margin: 40px 0px 40px 0px;
+	}
+
+	h1 a {
 	}
 
 	nav {
 		margin: 0px 0px 60px 0px;
 		padding: 20px 0px;
 		border-bottom: 1px solid black;
+	}
+
+	.small {
+		margin: 20px 40px;
+		width: 380px;
 	}
 }
