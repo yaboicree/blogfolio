@@ -21,11 +21,6 @@ h2, h3 {
 h1 a, h2 a, h3 a {
 	text-decoration: none;
 }
-nav li {
-	list-style-type: none;
-	display: block;
-	margin: 6px 25%;
-}
 
 .small {
 	width: 300px;
@@ -36,12 +31,22 @@ nav li {
 	box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
+nav li {
+	list-style-type: none;
+	display: block;
+	margin: 6px 0%;
+}
+
 .nav {
 	text-decoration: none;
 }
 
 .nav:hover {
 	text-decoration: none;
+}
+
+nav ul {
+	margin-left: 0px;
 }
 
 figure {

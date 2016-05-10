@@ -29,7 +29,7 @@ h1 a, h2 a, h3 a {
 nav li {
 	list-style-type: none;
 	display: block;
-	margin: 6px 25%;
+	margin: 6px 0%;
 }
 
 .small {
@@ -49,6 +49,9 @@ nav li {
 	text-decoration: none;
 }
 
+nav ul {
+	margin-left: 0px;
+}
 
 /* figure on about page */
 figure {
