@@ -31,13 +31,14 @@ gem 'jbuilder', '~> 2.0'
 # Blog app Monologue
 gem 'monologue'
 
+# Use postgreSQL instead of SQLite (for Heroku compatibility)
+gem 'pg'
+
 # gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
-  gem 'sqlite3'
 end
 
 group :development do
@@ -49,6 +50,4 @@ group :development do
 end
 
 group :production do
-	# Use postgreSQL instead of SQLite (for Heroku compatibility)
-	gem 'pg'
 end
