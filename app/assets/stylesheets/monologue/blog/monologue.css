@@ -14,7 +14,6 @@ ul {
 }
 
 .main-header .social:first-of-type i {
-  float:right;
   padding: 20px 0 0 0;
   font-size: 50px;
   text-decoration: none;
@@ -23,6 +22,10 @@ ul {
 .main-header .social {
   float: right;
   margin: 0 2px 0 2px;
+}
+
+.social .foundicon-github {
+  padding 
 }
 
 a.social {
