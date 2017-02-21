@@ -1,50 +1,109 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   
+<script> 
+	$(function() {
+    $("#mota_users").tooltip();
+    $("#mota_feed").tooltip();
+ });
+</script>
+
+<style> 
+.ui-tooltip, .ui-tooltip a { 
+    text-decoration: none; 
+    color: white;
+    background-color: green !important;
+    font-size: 100px !important;
+}
+</style>
+
+
 <h3>past projects</h3>
+
+<!-- remove descriptions... put description in fancyboxes? -->
+
+<h2><a href="http://thedetroitpartnership.org">detroit partnership</a></h2>
+<h3>wordpress / php / responsive web development / lamp</h3> 
+<p class="column">spring 2016: updating website to be responsive (mobile, tablet and full-size). experience modifying a wordpress template and setting up a local dev environment on my chromebook/linux hybrid. also improving method of volunteer registration, using both google maps API and a more user-friendly layout. the Detroit partnership is a service-learning organization that often feels like a philanthropic organization. </p>
+<!-- ADD IMAGES FOR THIS -->
+<!-- <img class="small fancybox" style="display: inline-block;" src="https:
+//s3.amazonaws.com/andersan/feed+-+Ruby+on+Rails+Tutorial+Sample+App
++-+https___evening-fjord-9218.herokuapp.com_.png" alt="microblog-feed"> <img
+class="small fancybox" style="display: inline-block;"
+src="https://s3.amazonaws.com/andersan/+users+I+Ruby+on+Rails+Tut_
++-+https___evening-fjord-9218.herokuapp.com_users.png" alt="microblog-users"> --><br>
 
 <!-- eecs 183 final project -->
 <h2><a href="http://mere-zebra-courses.herokuapp.com">course guide app</a></h2>
-<h3> flask / python / github / APIs / group work</h3>
+<h3> flask / python / github / APIs / team project</h3>
 <p class="column">spring 2016: course guide app/website that uses a university of michigan API and the google maps embed API. my role in the team was dealing with the APIs and integrating their content into the pages one of our team members styled and (mostly) created. i also handled the hosting of the website on heroku.</p>
 <img class="small fancybox" src="https://s3.amazonaws.com/andersan/mere-zebra.png" alt="university of michigan course guide">
 </br>
 
 <!-- rails tutorial --> <h2><a href="http://evening-
 fjord-9218.herokuapp.com">"motabook"</a></h2> <h3>ruby on rails / heroku /
-github</h3> <p class="column" style="width: 100%">summer 2015: a  <a
-href="https://railstutorial.org">ruby on rails tutorial</a> microblogging web
-app. got more comfortable with github and developing in linux, often working offline (did not have internet at the time). ruby on rails app has a robust authentication/authorization system, a follow/unfollow feature for users, and microposts (with a feed and the ability to create posts). image upload is no longer functional (disconnected it from my AWS account). </p> <img class="small fancybox" style="display: inline-block;" src="https:
-//s3.amazonaws.com/andersan/feed+-+Ruby+on+Rails+Tutorial+Sample+App
-+-+https___evening-fjord-9218.herokuapp.com_.png" alt="microblog-feed"> <img
-class="small fancybox" style="display: inline-block;"
+github</h3> <p class="column" style="width: 100%">summer 2015  ruby on rails app has a robust authentication/authorization system, a follow/unfollow feature for users, and microposts (with a feed and the ability to create posts). image upload is no longer functional (disconnected it from my AWS account). </p> 
+<img class="small fancybox" id="mota_users"
+title="a  <a href='https://railstutorial.org'>ruby on rails tutorial</a> microblogging web app" 
+style="display: inline-block;"
 src="https://s3.amazonaws.com/andersan/+users+I+Ruby+on+Rails+Tut_
-+-+https___evening-fjord-9218.herokuapp.com_users.png" alt="microblog-users">
++-+https___evening-fjord-9218.herokuapp.com_users.png"
+alt="microblog-users">
+
+<img class="small fancybox" id="mota_feed"
+title= "josh robison"
+style="display: inline-block;" 
+src="https:
+//s3.amazonaws.com/andersan/feed+-+Ruby+on+Rails+Tutorial+Sample+App
++-+https___evening-fjord-9218.herokuapp.com_.png" 
+alt="microblog-feed"> 
 </br>
 
+
 <!-- si 206 projects -->
-<h2><a href="http://andersan.net23.net/group_project">web dev final project</a></h2>
-<h3>responsive and accessible html / css / php / javascript / jquery / group work</h3>
-<p class="column">april 2015: final project for a web design course. i mostly handed the creation of php pages and creating a form that did not accept invalid input. also got to practice FTPing into a server to upload content.</p>
-<img class="small fancybox" src="https://s3.amazonaws.com/andersan/lucky-kitchen.png" alt="lucky kitchen order page, php form">
-</br>
+<!--<h2><a href="http://andersan.net23.net/group_project">web dev final project</a></h2>
+<h3>responsive and accessible html / css / php / javascript / jquery / team project</h3>
+<p class="column">april 2015</p>
+<img class="small fancybox" id="si206" title="final project for a web design course. created the website's pages' php/html structure and created a form with validation rules." src="https://s3.amazonaws.com/andersan/lucky-kitchen.png" alt="lucky kitchen order page, php form">
+</br>-->
+
+
 
 
 <h3>ongoing projects</h3>
 
 <h2><a href="http://speaksy.herokuapp.com">speaksy ("speak-easy")</a></h2>
 <h3>ruby on rails / full stack development / group work</h3> 
-<p class="column">mostly summer 2015: a crowd-sourced language-learning website, built in ruby on rails and hosted on heroku. our development team consists of several students at stanford university and the university of michigan. i wrote all the code for the above website (as of May 2016), but my teammate Santos <a href="http://speaksy.org">made this website</a> when we began to work on the project.
+<p class="column">mostly summer 2015: a crowd-sourced language-learning website, built in ruby on rails and hosted on heroku. our development team consists of several students at stanford university and the university of michigan. i wrote all the code for the above website (as of May 2016), but my co-founder Santos <a href="http://speaksy.org">made this website</a> when we began to work on the project.
 </p>
 <!--<img src="" alt="">-->
 </br>
-
-
-<h2><a href="http://thedetroitpartnership.org">detroit partnership</a></h2>
-<h3>wordpress / php / responsive web development / lamp</h3> 
-<p class="column">january and may 2016: updating website to be responsive (mobile, tablet and full-size). experience modifying a wordpress template and setting up a local dev environment on my chromebook/linux hybrid. also improving method of volunteer registration, using both google maps API and a more user-friendly layout. the Detroit partnership is a service-learning organization that often feels like a philanthropic organization. </p>
-<!--<img src="" alt="">-->
-<br>
 
 
 <h2>my dev environment</h2>
 <p class="column" style="float:none;">since november 2014, my main computer has been a toshiba chromebook 2, which i must say is a fantastic machine! all of my developing work has been done on linux through a dual-boot system called crouton which is specific to chrome OS. i am currently dual-booting an ubuntu 14.04 unity desktop and the standard chrome OS. this has provided some challenges (especially with photo editing software), but the system is fast enough for the projects i have done and i am now very comfortable working from the command line on a linux machine.</p>
 <!--<img src="" alt="">-->
 </br>
+
+<script>
+$("#si206").fancybox({
+	'titlePosition'	:	'over',
+	'onComplete'	:	function() {
+		$("#fancybox-wrap").hover(function() {
+			$("#fancybox-title").show();
+		}, function() {
+			$("#fancybox-title").hide();
+		});
+	}
+});
+
+$("#tip3").fancybox({
+	'titlePosition'	:	'over',
+	'onComplete'	:	function() {
+		$("#fancybox-wrap").hover(function() {
+			$("#fancybox-title").show();
+		}, function() {
+			$("#fancybox-title").hide();
+		});
+	}
+});
