@@ -8,6 +8,7 @@
  *= require monologue/blog/fonts
  *= require_self
  *= require monologue/blog/custom
+ *= require fancybox
  */
 header {
 	text-align: center;	
@@ -21,6 +22,7 @@ h2, h3 {
 		margin: 20px 0px;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: normal;
+		text-align: center;
 }
 
 h1 a, h2 a, h3 a {
@@ -35,6 +37,8 @@ nav li {
 .small {
 	width: 300px;
 	height: auto;
+	max-height: 200px;
+	object-fit: cover;
 	clear: both;
 	display: block;
 	margin: 20px 0px;
@@ -60,6 +64,7 @@ figure {
 
 p, p.twelve.columns {
 	margin: 10px 0px;
+	padding: 10px;
 }
 
 @media only screen and (min-width : 760px) {

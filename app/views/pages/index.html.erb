@@ -1,65 +1,97 @@
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-   
-<script> 
-	$(function() {
-    $("#mota_users").tooltip();
-    $("#mota_feed").tooltip();
- });
-</script>
+<h2>Detroit Partnership</h2>
 
-<style> 
-.ui-tooltip, .ui-tooltip a { 
-    text-decoration: none; 
-    color: white;
-    background-color: green !important;
-    font-size: 100px !important;
-}
-</style>
-
-
-<h3>past projects</h3>
-
-<!-- remove descriptions... put description in fancyboxes? -->
-
-<h2><a href="http://thedetroitpartnership.org">detroit partnership</a></h2>
 <h3>wordpress / php / responsive web development / lamp</h3> 
-<p class="column">spring 2016: updating website to be responsive (mobile, tablet and full-size). experience modifying a wordpress template and setting up a local dev environment on my chromebook/linux hybrid. also improving method of volunteer registration, using both google maps API and a more user-friendly layout. the Detroit partnership is a service-learning organization that often feels like a philanthropic organization. </p>
-<!-- ADD IMAGES FOR THIS -->
-<!-- <img class="small fancybox" style="display: inline-block;" src="https:
-//s3.amazonaws.com/andersan/feed+-+Ruby+on+Rails+Tutorial+Sample+App
-+-+https___evening-fjord-9218.herokuapp.com_.png" alt="microblog-feed"> <img
-class="small fancybox" style="display: inline-block;"
-src="https://s3.amazonaws.com/andersan/+users+I+Ruby+on+Rails+Tut_
-+-+https___evening-fjord-9218.herokuapp.com_users.png" alt="microblog-users"> --><br>
+
+<a class="fancybox" rel="DP" 
+title="tablet view of detroit partnership website (>960px)" 
+href="https://s3.amazonaws.com/andersan/blog/DP/home_laptop.png">
+<img class="small" id="DP_laptop"
+style="display: inline-block;"
+src="https://s3.amazonaws.com/andersan/blog/DP/home_laptop.png"
+alt="microblog-users">
+</a>
+
+<a class="fancybox" rel="DP" 
+title="mobile view of the website, with a custom dropdown menu (<480px)" 
+href="https://s3.amazonaws.com/andersan/blog/DP/home_mobile_dropdown_menu_solo.png">
+<img class="small" id="DP_mobile_menu"
+style="display: inline-block;"
+src="https://s3.amazonaws.com/andersan/blog/DP/home_mobile_dropdown_menu_solo.png"
+alt="microblog-users">
+</a>
+
+<a class="fancybox" rel="DP" 
+title="features edited to display vertically in mobile (<480px)" 
+href="https://s3.amazonaws.com/andersan/blog/DP/mobile_features.png">
+<img class="small" id="DP_mobile_features"
+style="display: inline-block;"
+src="https://s3.amazonaws.com/andersan/blog/DP/mobile_features.png"
+alt="microblog-users">
+</a>
+
+<a class="fancybox" rel="DP" 
+title="modified wordpress slider plugin to work with mobile devices (<480px)"href="https://s3.amazonaws.com/andersan/blog/DP/mobile_slider.png">
+<img class="small" id="DP_mobile_slider"
+style="display: inline-block;"
+src="https://s3.amazonaws.com/andersan/blog/DP/mobile_slider.png"
+alt="microblog-users">
+</a>
+
+<a class="fancybox" rel="DP" 
+title="tablet view of the website (<960px)" 
+href="https://s3.amazonaws.com/andersan/blog/DP/home_tablet.png">
+<img class="small fancybox" id="DP_tablet"
+style="display: inline-block;"
+src="https://s3.amazonaws.com/andersan/blog/DP/home_tablet.png"
+alt="microblog-users">
+</a>
+
+<p class="column">spring 2016: updated website to be responsive (mobile, tablet and full-size). gained experience modifying a wordpress template and setting up a local dev environment on my chromebook/linux hybrid. also improving method of volunteer registration, using both google maps API and a more user-friendly layout. </p>
 
 <!-- eecs 183 final project -->
+
 <h2><a href="http://mere-zebra-courses.herokuapp.com">course guide app</a></h2>
+
 <h3> flask / python / github / APIs / team project</h3>
-<p class="column">spring 2016: course guide app/website that uses a university of michigan API and the google maps embed API. my role in the team was dealing with the APIs and integrating their content into the pages one of our team members styled and (mostly) created. i also handled the hosting of the website on heroku.</p>
-<img class="small fancybox" src="https://s3.amazonaws.com/andersan/mere-zebra.png" alt="university of michigan course guide">
+
+<a class="fancybox" rel="cs183" 
+href="https://s3.amazonaws.com/andersan/blog/course_guide/mere-zebra.png">
+<img class="small" src="https://s3.amazonaws.com/andersan/blog/course_guide/mere-zebra.png" alt="university of michigan course guide">
+</a>
+
+<p class="column">spring 2016: course guide app/website that uses a university of michigan API and the google maps embed API. my role in the team was dealing with the APIs and integrating content into the pages that one of our team members styled and (mostly) created. i also handled the hosting of the website on heroku.</p>
+
 </br>
 
-<!-- rails tutorial --> <h2><a href="http://evening-
-fjord-9218.herokuapp.com">"motabook"</a></h2> <h3>ruby on rails / heroku /
-github</h3> <p class="column" style="width: 100%">summer 2015  ruby on rails app has a robust authentication/authorization system, a follow/unfollow feature for users, and microposts (with a feed and the ability to create posts). image upload is no longer functional (disconnected it from my AWS account). </p> 
-<img class="small fancybox" id="mota_users"
-title="a  <a href='https://railstutorial.org'>ruby on rails tutorial</a> microblogging web app" 
+<!-- rails tutorial --> 
+
+<h2><a href="http://evening-fjord-9218.herokuapp.com">Microblog/twitter clone</a></h2>
+
+<h3>ruby on rails / heroku / github / app development</h3> 
+
+<a class="fancybox" rel="motabook" 
+title="a ruby on rails tutorial microblogging web app, made using Michael Hartl's rails tutorial" 
+href="https://s3.amazonaws.com/andersan/blog/rails_tutorial/+users_Ruby_on_Rails.jpg">
+<img class="small" id="mota_users"
 style="display: inline-block;"
-src="https://s3.amazonaws.com/andersan/+users+I+Ruby+on+Rails+Tut_
-+-+https___evening-fjord-9218.herokuapp.com_users.png"
-alt="microblog-users">
+src="https://s3.amazonaws.com/andersan/blog/rails_tutorial/+users_Ruby_on_Rails.jpg"
+alt="microblog-users"/></a>
 
-<img class="small fancybox" id="mota_feed"
-title= "josh robison"
+<a class="fancybox" title= "the 'micropost' feed" rel="motabook" 
+href="https://s3.amazonaws.com/andersan/blog/rails_tutorial/feed_Ruby_on_Rails.jpg">
+<img class="small" id="mota_feed"
 style="display: inline-block;" 
-src="https:
-//s3.amazonaws.com/andersan/feed+-+Ruby+on+Rails+Tutorial+Sample+App
-+-+https___evening-fjord-9218.herokuapp.com_.png" 
-alt="microblog-feed"> 
+src="https://s3.amazonaws.com/andersan/blog/rails_tutorial/feed_Ruby_on_Rails.jpg" 
+alt="microblog-feed"/> </a>
+
+<p class="column" style="width: 100%">summer 2015: ruby on rails app 
+a robust authentication/authorization system, a follow/unfollow feature for users, and microposts (with a feed and the ability to create posts). first steps in Rails development with the aim of building an app with Speaksy. </br>Note: image upload on this page is no longer functional (disconnected it from my AWS account). </p> 
+
 </br>
 
 
+
+<!-- removed lucky kitchen - poor design of website, low quality for portfolio -->
 <!-- si 206 projects -->
 <!--<h2><a href="http://andersan.net23.net/group_project">web dev final project</a></h2>
 <h3>responsive and accessible html / css / php / javascript / jquery / team project</h3>
@@ -81,29 +113,28 @@ alt="microblog-feed">
 
 
 <h2>my dev environment</h2>
+<h3>dev ops / CLI / scripts / SQL</h3>
+
+<a class="fancybox" title= "the 'micropost' feed" rel="chromebook" 
+href="https://s3.amazonaws.com/andersan/blog/rails_tutorial/feed_Ruby_on_Rails.jpg">
+<img class="small" id="mota_feed"
+style="display: inline-block;" 
+src="https://s3.amazonaws.com/andersan/blog/rails_tutorial/feed_Ruby_on_Rails.jpg" 
+alt="microblog-feed"/> </a>
+
+<a class="fancybox" title= "the 'micropost' feed" rel="chromebook" 
+href="https://s3.amazonaws.com/andersan/blog/rails_tutorial/feed_Ruby_on_Rails.jpg">
+<img class="small" id="mota_feed"
+style="display: inline-block;" 
+src="https://s3.amazonaws.com/andersan/blog/rails_tutorial/feed_Ruby_on_Rails.jpg" 
+alt="microblog-feed"/> </a>
+
 <p class="column" style="float:none;">since november 2014, my main computer has been a toshiba chromebook 2, which i must say is a fantastic machine! all of my developing work has been done on linux through a dual-boot system called crouton which is specific to chrome OS. i am currently dual-booting an ubuntu 14.04 unity desktop and the standard chrome OS. this has provided some challenges (especially with photo editing software), but the system is fast enough for the projects i have done and i am now very comfortable working from the command line on a linux machine.</p>
-<!--<img src="" alt="">-->
+
 </br>
 
-<script>
-$("#si206").fancybox({
-	'titlePosition'	:	'over',
-	'onComplete'	:	function() {
-		$("#fancybox-wrap").hover(function() {
-			$("#fancybox-title").show();
-		}, function() {
-			$("#fancybox-title").hide();
-		});
-	}
-});
-
-$("#tip3").fancybox({
-	'titlePosition'	:	'over',
-	'onComplete'	:	function() {
-		$("#fancybox-wrap").hover(function() {
-			$("#fancybox-title").show();
-		}, function() {
-			$("#fancybox-title").hide();
-		});
-	}
-});
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a.fancybox").fancybox();
+	});
+</script>
