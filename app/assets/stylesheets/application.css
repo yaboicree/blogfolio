@@ -6,9 +6,9 @@
  *= require monologue/foundation_icons/social_foundicons
  *= require monologue/blog/monologue
  *= require monologue/blog/fonts
- *= require_self
  *= require monologue/blog/custom
  *= require fancybox
+ *= require_self
  */
 header {
 	text-align: center;	
@@ -18,7 +18,7 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3 {
+h2, h3, h4 {
 		margin: 20px 0px;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: normal;
@@ -49,6 +49,17 @@ nav li {
 
 ul {
 	margin-left: 0px;
+}
+
+div.description h4 {
+	font-size: 24px;
+}
+
+/* add spacing to descriptions of projects */
+
+ul row li.columns.five, li.columns.seven {
+	margin-bottom: 8px;
+	font-size: 16px;
 }
 
 /* about page profile image */
@@ -91,6 +102,9 @@ p, p.twelve.columns {
 }
 
 @media only screen and (min-width : 760px) {
+	ul li {
+
+	}
 	
 	nav li {
 		display: inline-block;
