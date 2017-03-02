@@ -45,6 +45,12 @@ nav li {
 	box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
+/* fix monologue ul indentation issue... may cause problems on blog posts */
+
+ul {
+	margin-left: 0px;
+}
+
 /* about page profile image */
 
 figure {
