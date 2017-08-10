@@ -36,6 +36,9 @@ gem 'monologue'
 # Use postgreSQL instead of SQLite (for Heroku compatibility)
 gem 'pg'
 
+# Add dashboard to manage home page content
+gem 'administrate'
+
 # gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development, :test do
