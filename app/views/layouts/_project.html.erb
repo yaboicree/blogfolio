@@ -1,0 +1,41 @@
+<%= for project in projects %>
+
+<h2><%= project.title %></h2>
+
+<h3><%= project.skills %> wordpress / php / responsive web development / content management</h3> 
+
+<%= for image in fancybox_images %>
+<a class="fancybox"
+rel="<%= fancybox_image.rel %>"
+title="<%= fancybox_image.subtitle %>"
+href="<%= fancybox_image.url %>">
+<!-- TODO: fix img style in CSS sheet... (add display: inline-block) -->
+<img class="small" 
+id="<%= fancybox_image.html_id %>"
+src="<%= fancybox_image.url %>"
+alt="<%= fancybox_image.alt_text %>" />
+</a>
+<% end %>
+<!-- TODO: - check if loops have correct syntax
+		   - move fancybox to separate layout -->
+
+<!-- TODO: - update format of outline, to be displayed below... -->
+<div class="container center description">
+	<h4 class="center" style="block"><%= project.period %></h4>
+	<ul>
+		<br>
+		<row>
+			<li class="five columns">updated website to be responsive (mobile, tablet and full-size)</li>
+			<li class="five columns">modified a wordpress template and set up a local wordpress dev environment on my chromebook/linux hybrid</li>
+			<li class="five columns">used google maps API and improved layout of program registration page</li>
+		</row>
+		<row>
+			<li class="seven columns ">CMS experience</li>
+			<li class="seven columns ">web hosting experience (hostgator, FTP)</li>
+		</row>
+	</ul>
+</div>
+
+<br>
+
+<% end %>
