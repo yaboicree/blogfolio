@@ -1,21 +1,21 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: cree_development
+  database: blog_development
   pool: 5
   template: template0
 
 test: &TEST
   adapter: postgresql
   encoding: utf8
-  database: cree_test
+  database: blog_test
   pool: 5
   template: template0
 
 production:
   adapter: postgresql
   encoding: utf8
-  database: cree_production
+  database: blog_production
   pool: 5
   template: template0
 
