@@ -7,9 +7,6 @@ class CreateProjects < ActiveRecord::Migration
       t.text :overview
       t.text :details
       t.string :image_url
-      t.integer :project_id, unique: true # :id???
-      t.datetime :published_at
-
 
       t.timestamps null: false
       # how to make FancyboxImages belong to projects??
