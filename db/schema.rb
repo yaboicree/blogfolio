@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160505140008) do
+ActiveRecord::Schema.define(version: 20170809213359) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "fancybox_images", force: :cascade do |t|
+    t.text     "subtitle"
+    t.string   "rel"
+    t.string   "url"
+    t.string   "html_id"
+    t.text     "alt_text"
+    t.integer  "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "fancybox_images", ["project_id"], name: "index_fancybox_images_on_project_id", using: :btree
 
   create_table "monologue_posts", force: :cascade do |t|
     t.boolean  "published"
@@ -49,6 +62,19 @@ ActiveRecord::Schema.define(version: 20160505140008) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "title"
+    t.text     "skills"
+    t.string   "period"
+    t.text     "overview"
+    t.text     "details"
+    t.string   "image_url"
+    t.integer  "project_id"
+    t.datetime "published_at"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
 end
