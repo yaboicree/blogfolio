@@ -55,6 +55,15 @@ div.description h4 {
 	font-size: 24px;
 }
 
+div.description {
+	display: none;
+}
+
+.more-info {
+	text-align: center;
+	font-size: 16px;
+}
+
 /* add spacing to descriptions of projects */
 
 ul row li.columns.five, li.columns.seven {
