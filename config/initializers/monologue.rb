@@ -1,7 +1,7 @@
 Monologue.config do |config|
-  config.site_name = "cree's corner"
-  config.site_subtitle = "professional web dev portfolio"
-  config.site_url = "http://cree.herokuapp.com"
+  config.site_name = "chris anderson"
+  config.site_subtitle = "a professional web development portfolio"
+  config.site_url = "andersan.com"
 
   config.meta_description = "This is my blog about..."
   config.meta_keyword = "music, fun"
@@ -32,7 +32,7 @@ Monologue.config do |config|
   config.facebook_logo = nil # 'logo.png'
   config.google_plus_account_url = nil # "https://plus.google.com/u/1/.../posts"
   config.linkedin_url = "http://www.linkedin.com/in/chrisanderson1491"
-  config.github_username = "yaboicree"
+  config.github_username = "andersan"
   config.show_rss_icon = false
 
 end
