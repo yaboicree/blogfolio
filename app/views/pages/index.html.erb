@@ -553,3 +553,14 @@ alt="sample from economics paper: economic models">
 		$("a.fancybox").fancybox();
 	});
 </script>
+<script type="text/javascript">
+$(".more-info").on("click", function () {
+    var x = $(this).siblings(".description");
+    x.toggle();
+    if (x.css('display') === "none") {
+       $( "div.more-info > a" ).text( "more info");
+    } else {
+       $( "div.more-info > a" ).text( "less info");
+    }
+});
+</script>
