@@ -30,7 +30,7 @@ Monologue.config do |config|
   config.twitter_username = nil # "yaboicree"
   config.facebook_url = nil # "https://www.facebook.com/chrisandersan"
   config.facebook_logo = nil # 'logo.png'
-  config.google_plus_account_url = nil # "https://plus.google.com/u/1/.../posts"
+  config.google_plus_account_url = nil  # "https://plus.google.com/u/1/.../posts"
   config.linkedin_url = "http://www.linkedin.com/in/chrisanderson1491"
   config.github_username = "andersan"
   config.show_rss_icon = false
