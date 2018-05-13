@@ -16,6 +16,7 @@ header {
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
+	margin: 40px;
 }
 
 h2, h3, h4 {
@@ -35,7 +36,7 @@ nav li {
 }
 
 .small {
-	width: 300px;
+	width: auto;
 	height: auto;
 	max-height: 200px;
 	object-fit: cover;
@@ -67,8 +68,10 @@ div.description {
 /* add spacing to descriptions of projects */
 
 ul row li.columns.five, li.columns.seven {
-	margin-bottom: 8px;
 	font-size: 16px;
+}
+ul row li {
+	margin: 10px;
 }
 
 /* about page profile image */
