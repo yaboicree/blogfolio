@@ -76,7 +76,7 @@ h2.timeline {
 
 .content {
   max-height: 20px;
-  padding: 50px 20px 0;
+  padding: 50px 20px;
   border-color: transparent;
   border-width: 2px;
   border-style: solid;
