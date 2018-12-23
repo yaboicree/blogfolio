@@ -4,12 +4,11 @@ class CreateFancyboxImages < ActiveRecord::Migration
       t.text :subtitle
       t.string :rel
       t.string :url
+      t.string :thumbnail_url
       t.string :html_id
       t.text :alt_text
-      t.references :project
+      t.references :project, index: true, foreign_key: true
       t.timestamps null: false
     end
-
-    add_index :fancybox_images, :project_id
   end
 end

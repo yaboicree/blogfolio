@@ -11,20 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170809213359) do
+ActiveRecord::Schema.define(version: 20181214024207) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "details", force: :cascade do |t|
+    t.text     "name"
+    t.integer  "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "details", ["project_id"], name: "index_details_on_project_id", using: :btree
 
   create_table "fancybox_images", force: :cascade do |t|
     t.text     "subtitle"
     t.string   "rel"
     t.string   "url"
+    t.string   "thumbnail_url"
     t.string   "html_id"
     t.text     "alt_text"
     t.integer  "project_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   add_index "fancybox_images", ["project_id"], name: "index_fancybox_images_on_project_id", using: :btree
@@ -66,15 +76,26 @@ ActiveRecord::Schema.define(version: 20170809213359) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
-    t.text     "skills"
+    t.string   "html_id"
+    t.string   "app_url"
     t.string   "period"
     t.text     "overview"
-    t.text     "details"
     t.string   "image_url"
-    t.integer  "project_id"
     t.datetime "published_at"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
 
+  create_table "skills", force: :cascade do |t|
+    t.text     "name"
+    t.integer  "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "skills", ["project_id"], name: "index_skills_on_project_id", using: :btree
+
+  add_foreign_key "details", "projects"
+  add_foreign_key "fancybox_images", "projects"
+  add_foreign_key "skills", "projects"
 end

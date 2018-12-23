@@ -9,9 +9,25 @@
  *= require monologue/blog/custom
  *= require fancybox
  *= require_self
+ *= require font-awesome
+
  */
+ 
 header {
 	text-align: center;	
+	width: 98% !important;
+	margin: 0 1% !important;
+}
+
+.container {
+	width: 1280px;
+}
+
+.main {
+    max-width: 1220px;
+    width: calc(100% - 10vw);
+    border: #5B2C80 3px solid;
+    border-radius: 25px;
 }
 
 h1 {
@@ -29,10 +45,36 @@ h2, h3, h4 {
 h1 a, h2 a, h3 a {
 	text-decoration: none;
 }
-nav li {
+
+nav {
+	border-bottom: 1px solid black;
+	margin: 0px 0px 30px 0px;
+	padding: 20px 0px;
+}
+
+nav .pages {
 	list-style-type: none;
 	display: block;
 	margin: 6px 0%;
+	font-size: 16px;
+	text-align: center;
+}
+
+nav .pages li {
+	margin: 0;
+	width: 33%;
+}
+
+nav .icons {
+	font-size: 32px;
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+}
+
+nav .icons a {
+	display: inline-block;
+	width: 50px;
+	margin: 0px 0%;
 }
 
 .small {
@@ -46,18 +88,28 @@ nav li {
 	box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
+.main {
+	background-color: #fff;
+}
+
+
 /* fix monologue ul indentation issue... may cause problems on blog posts */
 
 ul {
 	margin-left: 0px;
 }
 
+div.description {
+	display: none;
+	font-size: 16px;
+}
+
 div.description h4 {
 	font-size: 24px;
 }
 
-div.description {
-	display: none;
+div.description div {
+	margin: 10px;
 }
 
 .more-info {
@@ -65,14 +117,150 @@ div.description {
 	font-size: 16px;
 }
 
-/* add spacing to descriptions of projects */
+/* svg header styles from main page TODO move to another file, don't load on every page?? */
 
-ul row li.columns.five, li.columns.seven {
-	font-size: 16px;
+.megatron {
+  height: 50vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-ul row li {
-	margin: 10px;
+
+body {
+  background-color: rgba(65, 9, 93, 0.8);
+  /*background-color: #FF7D9D;*/
+  /*background-color: #6d695c;*/
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+	/*background-size: 58px 58px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+	0px 36px, 4px 2px, 29px 6px, 33px 30px;
+	background-image:*/
+/*linear-gradient(335deg, #C90032 23px, transparent 23px),
+linear-gradient(155deg, #C90032 23px, transparent 23px),
+linear-gradient(335deg, #C90032 23px, transparent 23px),
+linear-gradient(155deg, #C90032 23px, transparent 23px),
+
+linear-gradient(335deg, #C90032 10px, transparent 10px),
+linear-gradient(155deg, #C90032 10px, transparent 10px),
+linear-gradient(335deg, #C90032 10px, transparent 10px),
+linear-gradient(155deg, #C90032 10px, transparent 10px);*/
+/*linear-gradient(335deg, #510b75 23px, transparent 23px),
+linear-gradient(155deg, #510b75 23px, transparent 23px),
+linear-gradient(335deg, #510b75 23px, transparent 23px),
+linear-gradient(155deg, #510b75 23px, transparent 23px),
+
+linear-gradient(335deg, #510b75 10px, transparent 10px),
+linear-gradient(155deg, #510b75 10px, transparent 10px),
+linear-gradient(335deg, #510b75 10px, transparent 10px),
+linear-gradient(155deg, #510b75 10px, transparent 10px);*/
 }
+
+svg.intro {
+  background: linear-gradient(135deg, #aa3bb1, #582a7e);
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-shadow: 0 30px 50px -20px #2e0642;
+}
+svg.intro .text {
+  display: none;
+}
+svg.intro.go .text {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+}
+svg.intro.go .text-stroke {
+  fill: none;
+  stroke: #51256f;
+  stroke-width: 2.8px;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  -webkit-animation: dash 2.5s ease-in-out forwards;
+          animation: dash 2.5s ease-in-out forwards;
+}
+svg.intro.go .text-stroke:nth-child(2) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+}
+svg.intro.go .text-stroke:nth-child(3) {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}
+svg.intro.go .text-stroke-2 {
+  stroke: #f6bdfa;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+svg.intro.go .text-stroke:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+svg.intro.go .text-stroke:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.reload {
+	cursor: pointer;
+}
+
+/*.reload {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  outline: none !important;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: 0 6px 7px #350e4c;
+  transition: all 0.1s cubic-bezier(0.67, 0.13, 0.1, 0.81);
+}
+.reload:hover {
+  box-shadow: 0 4px 4px #350e4c;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+.reload:active {
+  box-shadow: 0 1px 2px #244B94;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+.reload svg {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}*/
+
 
 /* about page profile image */
 
@@ -124,7 +312,7 @@ p, p.twelve.columns {
 	}
 	
 	h1 {
-	  margin: 40px 0px 40px 0px;
+		margin: 40px 0px 40px 0px;
 	}
 
 	h2, h3{
@@ -134,7 +322,6 @@ p, p.twelve.columns {
 	nav {
 		margin: 0px 0px 60px 0px;
 		padding: 20px 0px;
-		border-bottom: 1px solid black;
 	}
 	.small {
 		margin: 20px 40px;

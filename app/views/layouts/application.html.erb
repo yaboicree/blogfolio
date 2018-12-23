@@ -11,17 +11,29 @@
 		<%= stylesheet_link_tag    "monologue/blog/application" %>
 		<%= javascript_include_tag "monologue/blog/application" %>
 
-	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'prefixfree', 'data-turbolinks-track' => true %>
+
+		<% if current_page?(root_path) %>
+			<%= stylesheet_link_tag    'timeline', media: 'all', 'data-turbolinks-track' => true %>
+			<%= javascript_include_tag 'jquery_lazyload', 'data-turbolinks-track' => true %>
+		<% end %>
 	  
-	  <%= csrf_meta_tags %>
+		<%= csrf_meta_tags %>
 	</head>
 	<body>
-	  <div class="container">
-	    
-	   	<%= render 'layouts/header' %>
 
-			<%= yield %>
+		<% if current_page?(root_path) %>
+			<%= render "layouts/svg_text" %>
+		<% end %>
+
+		<div class="container main">
+
+
+	   		<%= render 'layouts/header' %>
+
+				<%= yield %>
 
 			<%= render 'layouts/footer' %>
 		</div>

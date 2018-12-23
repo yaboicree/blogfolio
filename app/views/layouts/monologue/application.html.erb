@@ -33,12 +33,12 @@
   <% if content_for?(:footer) %>
     <footer>
       <%= yield :footer %>
-      <p>&copy 2018 chris anderson</p>
+      <p>&copy <%= Time.current.year %> Chris Anderson</p>
     </footer>
   <% else %>
     <div class="container">
       <footer>
-        <p>&copy 2018 chris anderson</p>
+        <p>&copy <%= Time.current.year %> Chris Anderson</p>
       </footer>
     </div>
   <% end %>

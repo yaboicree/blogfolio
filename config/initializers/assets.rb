@@ -14,4 +14,7 @@ Rails.application.config.assets.precompile += %w( fancybox/source/jquery.fancybo
 	fancybox/source/helpers/jquery.fancybox-media.js
 	fancybox/source/helpers/jquery.fancybox-thumbs.css
 	fancybox/source/helpers/jquery.fancybox-thumbs.js
-	fancybox/lib/jquery.mousewheel-3.0.6.pack.js)
+	fancybox/lib/jquery.mousewheel-3.0.6.pack.js
+	prefixfree.js
+	timeline.css
+	jquery_lazyload.js)

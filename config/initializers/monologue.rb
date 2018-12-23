@@ -1,10 +1,10 @@
 Monologue.config do |config|
-  config.site_name = "chris anderson"
-  config.site_subtitle = "a professional web development portfolio"
+  config.site_name = "Chris Anderson"
+  config.site_subtitle = "Full-Stack Web Developer"
   config.site_url = "andersan.com"
 
   config.meta_description = "This is my blog about..."
-  config.meta_keyword = "music, fun"
+  config.meta_keyword = "web development, music, fun"
 
   config.admin_force_ssl = false
   config.posts_per_page = 10

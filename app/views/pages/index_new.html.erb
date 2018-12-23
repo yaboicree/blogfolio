@@ -55,3 +55,20 @@
 		</div> 
 	</div>
 <% end %>-->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a.fancybox").fancybox();
+	});
+</script>
+<script type="text/javascript">
+$(".more-info").on("click", function () {
+    var x = $(this).siblings(".description");
+    x.toggle();
+    if (x.css('display') === "none") {
+       $(this).find("a").text( "more info");
+    } else {
+       $(this).find("a").text( "less info");
+    }
+});
+</script>

@@ -1,7 +1,12 @@
 class PagesController < ApplicationController
 
-	def projects
-		render 'index'
+  def projects
+    @projects = Project.all
+    render 'index'
+  end
+
+  def index_new
+    @projects = Project.all
   end
 
   def about

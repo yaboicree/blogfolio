@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'pages#projects'
   get    'about'   => 'pages#about'
   get    'contact' => 'pages#contact'
+  get    'index_new' => 'pages#index_new'
 
 
   # This line mounts Monologue's routes at the root of your application.
@@ -14,4 +15,5 @@ Rails.application.routes.draw do
   mount Monologue::Engine, at: '/thoughts' # or whatever path, be it "/blog" or "/monologue"
   get    'about'   => 'pages#about'
   get    'contact' => 'pages#contact'
+  get    'index_new' => 'pages#index_new'
 end

@@ -17,6 +17,13 @@ gem 'coffee-rails', '~> 4.1.0'
 # Fix the conflict with the system 'rake':
 gem 'rake', '~> 0.9.6'
 
+# Enable the use of font-awesome icons (e.g. facebook icon, log out icon)
+# https://github.com/bokmann/font-awesome-rails
+gem 'font-awesome-rails'
+
+# Enable lazy loading of images 
+gem "lazyload-rails"
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 

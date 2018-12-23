@@ -1,0 +1,72 @@
+<h2>Projects</h2>
+<ul id='timeline'>
+  <% @projects.each_with_index do |project, index| %>
+  <li class='work'>
+      <input class='radio' id='work<%= index %>' name='works' type='radio' <%= if index == 0 then "checked" end %>>
+      <div class="relative">
+        <label for='work<%= index %>'><%= project.title %></label>
+        <span class='date'><%= project.period %></span>
+        <span class='circle'></span>
+      </div>
+      <div class='content'>
+        <p>
+          <%
+      # format output for skills text
+      @skills = ""
+      count = 0
+      length = project.skills.length
+      project.skills.each do |skill|
+        @skills << skill.name
+        count += 1
+        if count != length
+          @skills << " | "
+        end
+      end
+      %>
+      
+        <%= @skills %> 
+        
+        </p>
+
+        <div class="center">
+          <% project.fancybox_images.each_with_index do |image, im_index| %>
+            <div style="display: inline-block;">
+              <a class="fancybox" rel="<%= image.rel %>"
+              title="<%= image.subtitle %>"
+              href="<%= image.url %>"
+              <%= if im_index != 0 then "style=display:none; " end %>
+              >
+                <%= image_tag image.thumbnail_url, 
+                alt: image.alt_text, 
+                id: image.html_id,
+                style: "display: inline-block", 
+                class: "small",
+                lazy: true %>
+              </a>
+            </div>
+          <% end %>
+           <!--<% image = project.fancybox_images.first %>
+          <div style="display: inline-block;">
+            <a class="fancybox" rel="<%= image.rel %>"
+            title="<%= image.subtitle %>"
+            href="<%= image.url %>">  
+              <%= image_tag image.thumbnail_url, 
+              alt: image.alt_text, 
+              id: image.html_id,
+              style: "display: inline-block", 
+              class: "small",
+              lazy: true %>
+            </a>
+          </div>-->
+        </div>
+        <ul>
+          <% project.details.each do |desc| %>
+            <li><%= desc.name %></li>
+          <% end %>
+        </ul>
+      </div>
+
+      
+    </li>
+  <% end %>
+</ul>

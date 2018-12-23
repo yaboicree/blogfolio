@@ -1,10 +1,15 @@
 <nav>
 	<div>
-		<ul style="font-size: 16px; text-align: center;">
-			<li><%= link_to "projects", root_path, class: "nav" %></li>
-			<li><%= link_to "about cree", about_path, class: "nav" %></li>
+		<ul class ="pages">
+			<li><%= link_to "Projects", root_path, class: "nav" %></li>
+			<li><%= link_to "About Me", about_path, class: "nav" %></li>
 			<!--<li><%= link_to "contact", contact_path, class: "nav" %></li>-->
-			<li><%= link_to "thoughts", monologue_path, class: "nav" %></li>
+			<li><%= link_to "Blog (Under construcion)", nil, class: "nav" %></li>
+		</ul>
+		<ul class="icons">
+			<a href="https://github.com/andersan"><%= content_tag(:li, fa_icon("github")) %></a>
+			<a href="https://www.linkedin.com/in/chrisanderson1491/"><%= content_tag(:li, fa_icon("linkedin")) %></a>
+			<a href="mailto:andersan@umich.edu"><%= content_tag(:li, fa_icon("envelope")) %></a>
 		</ul>
 	</div>
 </nav>

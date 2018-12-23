@@ -16,3 +16,14 @@
 //= require jquery.js
 //= require fancybox 
 //= require_tree 
+
+
+window.addEventListener("load", pageFullyLoaded, false);
+
+function pageFullyLoaded(e) {
+    $("img").lazyload();
+}
+
+$(document).ready(function() {
+	$("a.fancybox").fancybox();
+});
