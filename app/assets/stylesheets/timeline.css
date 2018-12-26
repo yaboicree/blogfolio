@@ -216,11 +216,12 @@ h2.timeline {
     width: 85%;
     font-size: 1.1em;
     display: block;
+    top: 35px;
     transform: translateX(18px);
   }
 
   .content {
-    padding-top: 45px;
+    padding-top: 60px;
     border-color: #181818;
   }
   .content:before, .content:after {
@@ -245,6 +246,11 @@ h2.timeline {
   .content p {
     font-size: 0.9em;
     line-height: 1.4;
+  }
+
+  .radio:checked ~ .content {
+    margin-right: 0px;
+    transform: translateX(0px);
   }
 
   .circle, .date {
