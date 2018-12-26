@@ -9,7 +9,8 @@
         <span class='circle'></span>
       </div>
       <div class='content'>
-        <p>
+        <h3><%= project.title %></h3>
+        <p class="skills">
           <%
       # format output for skills text
       @skills = ""
@@ -28,7 +29,7 @@
         
         </p>
 
-        <div class="center">
+        <div class="center fancy_img">
           <% project.fancybox_images.each_with_index do |image, im_index| %>
             <div style="display: inline-block;">
               <a class="fancybox" rel="<%= image.rel %>"
@@ -45,20 +46,8 @@
               </a>
             </div>
           <% end %>
-           <!--<% image = project.fancybox_images.first %>
-          <div style="display: inline-block;">
-            <a class="fancybox" rel="<%= image.rel %>"
-            title="<%= image.subtitle %>"
-            href="<%= image.url %>">  
-              <%= image_tag image.thumbnail_url, 
-              alt: image.alt_text, 
-              id: image.html_id,
-              style: "display: inline-block", 
-              class: "small",
-              lazy: true %>
-            </a>
-          </div>-->
         </div>
+          <%= content_tag(:span, fa_icon( "image", style: "z-index: 100; position: relative; height: 0px; left: 50%; top: -55px; font-size: 24px;")) %>
         <ul>
           <% project.details.each do |desc| %>
             <li><%= desc.name %></li>

@@ -24,6 +24,7 @@ header {
 }
 
 .main {
+	margin: 30px auto;
     max-width: 1220px;
     width: calc(100% - 10vw);
     border: #5B2C80 3px solid;
@@ -61,8 +62,9 @@ nav .pages {
 }
 
 nav .pages li {
-	margin: 0;
-	width: 33%;
+	display: inline-block;
+	margin: 3% 0;
+	width: 100%;
 }
 
 nav .icons {
@@ -302,8 +304,10 @@ p, p.twelve.columns {
 }
 
 @media only screen and (min-width : 760px) {
-	ul li {
 
+	nav .pages li {
+		margin: 0;
+		width: 33%;
 	}
 	
 	nav li {
@@ -323,6 +327,7 @@ p, p.twelve.columns {
 		margin: 0px 0px 60px 0px;
 		padding: 20px 0px;
 	}
+
 	.small {
 		margin: 20px 40px;
 		width: 380px;
