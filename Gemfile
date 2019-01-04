@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.3.7"
+ruby "2.3.7" # Need to upgrade to more recent ruby for Heroku compatibility
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
